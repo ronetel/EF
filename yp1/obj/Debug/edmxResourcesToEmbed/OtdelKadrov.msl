@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ypModelContainer" CdmEntityContainer="ypEntities2">
+    <EntitySetMapping Name="Departments">
+      <EntityTypeMapping TypeName="ypModel.Departments">
+        <MappingFragment StoreEntitySet="Departments">
+          <ScalarProperty Name="id_department" ColumnName="id_department" />
+          <ScalarProperty Name="name_dep" ColumnName="name_dep" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="ypModel.Employees">
+        <MappingFragment StoreEntitySet="Employees">
+          <ScalarProperty Name="id_employee" ColumnName="id_employee" />
+          <ScalarProperty Name="name_emp" ColumnName="name_emp" />
+          <ScalarProperty Name="surname_emp" ColumnName="surname_emp" />
+          <ScalarProperty Name="midlname_emp" ColumnName="midlname_emp" />
+          <ScalarProperty Name="position_id" ColumnName="position_id" />
+          <ScalarProperty Name="hire_date" ColumnName="hire_date" />
+          <ScalarProperty Name="salary" ColumnName="salary" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Positions">
+      <EntityTypeMapping TypeName="ypModel.Positions">
+        <MappingFragment StoreEntitySet="Positions">
+          <ScalarProperty Name="id_position" ColumnName="id_position" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="department_id" ColumnName="department_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
